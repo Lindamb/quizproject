@@ -18,10 +18,9 @@
 	<h1>{{ quiz.name }}</h1>
 	<p>{{ quiz.description }}</p>
 	<div class="container">
-<button type="button" class="btn btn-primary">Starta quizet</button>
+<button type="button" class="btn btn-primary" href="{% url 'question_page' quiz_number 1 %}">Starta quizet</button>
 	</div>
 </div>
-
 
 
 </body>
