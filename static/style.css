@@ -1,0 +1,28 @@
+.jumbotron {
+	background-color: #2F383B;
+	color: #FFFFFF;
+	font-family: sans-serif; 
+}
+
+.topheader {
+	text-align: center;
+}
+.jumbotron p {
+	text-align: center;
+}
+.header {
+	text-align: center;
+}
+.beatlecirkel {
+	width: 100%;
+	border-radius: 50%;
+}
+
+}
+.alert {
+	color: #FFFFFF;
+	background-color: #D4A190;
+}
+.blockquote {
+
+}
