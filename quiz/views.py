@@ -1,6 +1,6 @@
 from django.shortcuts import render
-def startpage(request):
-	return render(request, "quiz/startpage.html")
+def start(request):
+	return render(request, "quiz/start.html")
 
 def quiz(request):
 	return render(request, "quiz/quiz.html")
