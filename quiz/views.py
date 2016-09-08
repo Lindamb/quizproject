@@ -12,8 +12,8 @@ quizzes = [
 	},
 	{
 		"quiz_number": 3,
-   	    	"name": "Världens mest kända hackare",
-	    	"description": "Hackerhistoria är viktigt, kan du den?"	},
+   	    "name": "Världens mest kända hackare",
+	    "description": "Hackerhistoria är viktigt, kan du den?"	},
 ]
 # Create your views here.
 
@@ -29,8 +29,7 @@ def quiz(request, quiz_number):
 		"quiz_number": quiz_number,
 	}
 	return render(request, "quiz/quiz.html", context)
-	return render(request, "quiz/quiz.html")
-
+	
 def question(request):
 	return render(request, "quiz/question.html")	
 
