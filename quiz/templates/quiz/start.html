@@ -9,6 +9,8 @@
 	<title>Lindas Beatle Quiz</title>
 </head>
 <body>
+
+
 	<div class="jumbotron">
 		<h1 class="topheader">Beatlemania</h1>
 		<p>Hur väl känner du dina skalbaggar? Här är ett quiz som sätter dina Beatle-kunskaper på prov!</p>
@@ -19,6 +21,7 @@
 </div>
 
 		<div class="row">
+	
 			<div class="col-md-3 column1"><img class="beatlecirkel" src="/static/img/john.jpg"></div>
 			<div class="col-md-3 column2"><img class="beatlecirkel" src="/static/img/paul.jpg"></div>
 			<div class="col-md-3 column3"><img class="beatlecirkel" src="/static/img/george.jpg"></div>
@@ -28,7 +31,9 @@
 	</div>
 </div>
 
-
+	{% for quiz in quizzes %}
+	<p>{{ quiz.name }}</p>
+{% endfor %}
 
 </body>
 </html>
