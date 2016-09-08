@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'MagicalMysteryTour';
+  src: url('/static/fonts/MagicalMysteryTour.woff') format('woff'),
+       url('/static/fonts/MagicalMysteryTour.ttf') format('truetype');
+}
+
 .jumbotron {
 	background-color: #2F383B;
 	color: #FFFFFF;
-	font-family: Kavoon; Cursive; 
+	font-family: MagicalMysteryTour; Kavoon; Cursive; 
 	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 	background-image: url("/static/img/psychopattern.jpg");
 	text-align: center;
@@ -10,7 +16,7 @@
 .helbakgrund {
 	background-color: #2F383B;
 	color: #FFFFFF;
-	font-family: Kavoon; Cursive; 
+	font-family: MagicalMysteryTour; Kavoon; Cursive; 
 	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 	background-image: url("/static/img/psychopattern.jpg");
 	max-height: 100%;
@@ -25,7 +31,7 @@
 }
 .helbakgrund h1 {
 	font-size: 5em;
-}
+}	
 .header {
 	text-align: center;
 }
@@ -41,12 +47,28 @@
 
 .alert-info {
   color: #FFFFFF;
-  background-color: #50B0BF;
+  background-color: #EDA221;
   border-color: #bce8f1;
   text-align: center;
 }
 
+.beatlequestion {
+	padding-top: 20px;
 }
-.blockquote {
 
+.container {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.homesubmarine {
+	padding-top: 20px;
+}
+.homesubmarine:hover {
+	opacity: 0.3; 
+	filter: alpha(opacity=30);
+}
+.nextsubmarine:hover {
+	opacity: 0.3; 
+	filter: alpha(opacity=30);
 }

@@ -6,20 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/static/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
 	<title>Lindas Beatle Quiz</title>
 </head>
 <body>
 	<div class="jumbotron">
-		<h1 class="topheader">John Lennon</h1>
-		<blockquote>
-		<p>“The time you enjoy wasting is not wasted time.”</p>
-		</blockquote>
+		<h1 class="topheader">Quiznamnet? {{ quiz.name }}</h1>
 	</div>
 	<div class="container">
-<h1>Du är klar och fick {{ correct }} av {{ total }}</h1>
+		<h1>Du är klar och fick {{ correct }} av {{ total }}</h1>
+			<p><a href="{% url 'start_page' %}"><img src="/static/img/homesubmarine.png" class="homesubmarine"</a></p>
 	</div>
-</div>
-<p><a href="{% url 'start_page' %}">Till startsidan</a></p>
 
 
 </body>
