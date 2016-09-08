@@ -1,14 +1,30 @@
 .jumbotron {
 	background-color: #2F383B;
 	color: #FFFFFF;
-	font-family: sans-serif; 
+	font-family: Kavoon; Cursive; 
+	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+	background-image: url("/static/img/psychopattern.jpg");
+	text-align: center;
 }
 
-.topheader {
+.helbakgrund {
+	background-color: #2F383B;
+	color: #FFFFFF;
+	font-family: Kavoon; Cursive; 
+	text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+	background-image: url("/static/img/psychopattern.jpg");
+	max-height: 100%;
 	text-align: center;
 }
+
 .jumbotron p {
 	text-align: center;
+}
+.jumbotron h1 {
+	font-size: 10em;
+}
+.helbakgrund h1 {
+	font-size: 5em;
 }
 .header {
 	text-align: center;
@@ -16,12 +32,20 @@
 .beatlecirkel {
 	width: 100%;
 	border-radius: 50%;
+	opacity: 1;
+}
+.beatlecirkel:hover {
+	opacity: 0.3; 
+	filter: alpha(opacity=30);
 }
 
+.alert-info {
+  color: #FFFFFF;
+  background-color: #50B0BF;
+  border-color: #bce8f1;
+  text-align: center;
 }
-.alert {
-	color: #FFFFFF;
-	background-color: #D4A190;
+
 }
 .blockquote {
 
