@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/static/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
 	<title>Lindas Beatle Quiz</title>
 </head>
 <body>
@@ -21,14 +22,19 @@
 </div>
 
 		<div class="row">
-
+<!--
 			{% for quiz in quizzes %}
-    		<p><a href="{% url 'quiz_page' quiz.quiz_number %}" class="beatlecircle">
+    		<p><a href="{% url 'quiz_page' quiz.quiz_number %}" class="beatlecirkel">
         	{{ quiz.name }}
     		</a></p>
 			{% endfor %}
-			<!--<div class="col-md-3 column1"><img class="beatlecirkel" src="/static/img/john.jpg"></div>
-			<div class="col-md-3 column2"><img class="beatlecirkel" src="/static/img/paul.jpg"></div>
+-->
+			{% for quiz in quizzes %}
+			<div class="col-md-3 column{{ quiz.quiz_number }}"><a href="{% url 'quiz_page' quiz.quiz_number %}">
+			<img class="beatlecirkel" alt="{{ quiz.name }}" src="/static/img/{{ quiz.quiz_number }}.jpg"></a></div>
+			{% endfor %}
+
+			<!--<div class="col-md-3 column2"><img class="beatlecirkel" src="/static/img/paul.jpg"></div>
 			<div class="col-md-3 column3"><img class="beatlecirkel" src="/static/img/george.jpg"></div>
 			<div class="col-md-3 column4"><img class="beatlecirkel" src="/static/img/ringo.jpg"></div>-->
 			
