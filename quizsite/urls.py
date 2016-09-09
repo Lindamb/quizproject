@@ -8,4 +8,6 @@ urlpatterns = [
 	url(r"^quiz/([0-9]+)/question/([0-9]+)/$", views.question, name="question_page"),
 	url(r"^quiz/([0-9]+)/completed/$", views.results, name="results_page"),
 	url(r"^admin/", include(admin.site.urls)),
+	url(r"^quiz/([0-9]+)/question/([0-9]+)/answers/$", views.answer, name="answer_page"),
+
 	]
