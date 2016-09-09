@@ -16,27 +16,32 @@
 	</div>
 
 	<div class="container">
+	<form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
+	{%csrf_token %}
+	
 	<h1>{{ question_number }}. {{ question }}</h1>
 	<div class="radio">
   <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+    <input type="radio" name="answer" id="optionsRadios1" value="1">
     {{ answer1 }}
   </label>
 </div>
 	<div class="radio">
   <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    <input type="radio" name="answer" id="optionsRadios2" value="2">
     {{ answer2 }}
   </label>
 </div>
 	<div class="radio">
   <label>
-    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+    <input type="radio" name="answer" id="optionsRadios3" value="3">
     {{ answer3 }}
   </label>
 </div>
-
 <p><a href="{% url 'results_page' quiz_number %}"><img src="/static/img/nextsubmarine.png" class="nextsubmarine"/></a></p>
+</form>
+
+
 
 
 </body>
