@@ -30,7 +30,9 @@
 			{% endfor %}
 -->
 			{% for quiz in quizzes %}
+			<div class="imageWrapper">
 			<div class="col-md-3 column{{ quiz.quiz_number }}"><a href="{% url 'quiz_page' quiz.quiz_number %}"><img class="beatlecirkel" alt="{{ quiz.name }}" src="/static/img/{{ quiz.quiz_number }}.jpg"></a></div>
+			</div>
 			{% endfor %}
 
 			<!--<div class="col-md-3 column2"><img class="beatlecirkel" src="/static/img/paul.jpg"></div>
