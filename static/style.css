@@ -27,10 +27,10 @@
 	text-align: center;
 }
 .jumbotron h1 {
-	font-size: 10em;
+	font-size: 4em;
 }
 .helbakgrund h1 {
-	font-size: 5em;
+	font-size: 4em;
 }	
 .header {
 	text-align: center;
@@ -54,6 +54,7 @@
 
 .beatlequestion {
 	padding-top: 20px;
+	width: 100%;
 }
 
 .container {
@@ -72,14 +73,22 @@
 
 .homesubmarine {
 	padding-top: 20px;
-	
+	width: 80%;
+
 }
 .homesubmarine: hover {
 	opacity: 0.3; 
 	filter: alpha(opacity=30);
+	width: 80%;
 }
+
+.nextsubmarine {
+    width: 100%;
+}
+
 .nextsubmarine:hover {
 	opacity: 0.3; 
 	filter: alpha(opacity=30);
+    width: 100%;
 }
 
