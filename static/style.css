@@ -61,10 +61,20 @@
     padding-right: 40px;
 }
 
+.question {
+	font-family: Offside;
+}
+
+.answer {
+	font-family: Offside;
+}
+
+
 .homesubmarine {
 	padding-top: 20px;
+	
 }
-.homesubmarine:hover {
+.homesubmarine: hover {
 	opacity: 0.3; 
 	filter: alpha(opacity=30);
 }
